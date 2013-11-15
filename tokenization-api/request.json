@@ -1,0 +1,19 @@
+{
+  "account_details": {
+    "bank": {
+      "routing_number": "integer",
+      "account_number": "integer"
+    },
+    "entity": {
+      "business_name": "string",
+      "street_address": "string",
+      "city": "string",
+      "state": "string",
+      "zip_code": "integer",
+      "email_address": "string"
+    }
+  },
+  "credentials": {
+    "public_key": "string"
+  }
+}
