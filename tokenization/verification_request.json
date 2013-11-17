@@ -18,7 +18,7 @@
           "description": "signature algorithm used",
           "type": "string"
         }
-      }, "payments": {
+      }, "verification": {
         "type": "object",
         "properties": {
           "deposit_1": {

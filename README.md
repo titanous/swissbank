@@ -14,3 +14,11 @@ Bank account details are sensitive information. Users should be able to advertis
 4. Multiple tokenization services can enter into peering arrangements removing the need to process each transfer (ledger-based transfers)
 
 All client requests after initial tokenization include token, timestamp, nonce, and list the cryptographic signing algorithm used. Token, timestamp, and nonce are included in the main response object which is followed by the signature.
+
+## Todo
+
+ - standardize responses (more information needed)
+ - add payment/transaction IDs?
+ - enumerate possible signature algorithms
+ - specify additional cryptographic details (key, nonce lengths, etc)
+ - specify token format to facilitate inter-provider peering (URIs e.g. https://balanced.com/tokens/[tokenid], https://stripe.com/tokenapi/[tokenid])
