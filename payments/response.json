@@ -1,5 +1,12 @@
 {
-
+"description": "provider response to payment request",
+"type": "object",
+"properties": {
+  "status": {
+    "description": "",
+    "type": "string"
+  }
+}
 }
 
-status
+
