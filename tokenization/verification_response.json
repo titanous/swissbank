@@ -1,3 +1,10 @@
 {
-
+"description": "",
+"type": "object,
+"properties": {
+  "status": {
+    "description": "was verification successful?",
+    "type": "string"
+  }
+}
 }
