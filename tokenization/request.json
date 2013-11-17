@@ -1,19 +1,46 @@
 {
-  "account_details": {
+  "description": "client request to tokenize bank account details and file to a public key",
+  "type": "object",
+  "properties": {
     "bank": {
-      "routing_number": "integer",
-      "account_number": "integer"
-    },
-    "entity": {
-      "business_name": "string",
-      "street_address": "string",
-      "city": "string",
-      "state": "string",
-      "zip_code": "integer",
-      "email_address": "string"
+      "description": "",
+      "type": "object",
+      "properties": {
+        "routing_number": {
+          "type": "integer"
+        },
+        "account_number": {
+          "type": "integer"
+        }
+      }
     }
-  },
-  "credentials": {
-    "public_key": "string"
+    "entity": {
+      "description": "",
+      "type": "object",
+      "properties": {
+        "business_name": {
+          "type": "string"
+        },
+        "street_address": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "zip_code": {
+          "type: ""integer"
+        },
+        "email_address": {
+          "type": "string"
+        }
+      }
+    },
+    "credentials": {
+      "description": "user's public key. will be used to access payments API",
+      "type": "string"
+    }
   }
 }
