@@ -1,6 +1,6 @@
 {
 "description": "",
-"type": "object,
+"type": "object",
 "properties": {
   "status": {
     "description": "was verification successful?",
