@@ -12,3 +12,5 @@ Bank account details are sensitive information. Users should be able to advertis
 3. Other users can submit a request to the payments API with the published token as the destination.
 
 4. Multiple tokenization services can enter into peering arrangements removing the need to process each transfer (ledger-based transfers)
+
+All client requests after initial tokenization include token, timestamp, nonce, and list the cryptographic signing algorithm used. Token, timestamp, and nonce are included in the main response object which is followed by the signature.
