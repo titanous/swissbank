@@ -13,7 +13,7 @@
           "type": "integer"
         }
       }
-    }
+    },
     "entity": {
       "description": "",
       "type": "object",

@@ -1,3 +1,40 @@
 {
-
+  "description": "client request confirming test deposits to tokenized account",
+  "type": "object",
+  "properties": {
+    "main": {
+      {
+        "token": {
+          "type": "string"
+        },
+        "timestamp": {
+          "description": "time of request creation in unix epoch seconds",
+          "type": "integer"
+        },
+        "nonce": {
+          "type": "string"
+        },
+        "sig_alg": {
+          "description": "signature algorithm used",
+          "type": "string"
+        }
+      }, "payments": {
+        "type": "object",
+        "properties": {
+          "deposit_1": {
+            "description": "amount of first test deposit in cents (assuming US only for now)",
+            "type": "integer"
+          },
+          "deposit_2": {
+            "description": "amount of second test deposit in cents (assuming US only for now)",
+            "type": "integer"
+          }
+        }
+      },
+    },
+    "signature": {
+      "description": "content of object main signed with private key matching public key submitted during initial tokenization",
+      "type": "string"      
+    }
+  }
 }
